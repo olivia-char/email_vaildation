@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Success!</title>
+</head>
+<body>
+	<h3>The Email {{newEmail.email}} is a Vaild Email! </h3>
+	<h1>Email Addresses Entered:</h1>
+	<table>
+		<tr>
+			<th>Email</th>
+			<th>Created</th>
+		</tr>
+		{% for email in emails%}
+		<tr>
+			<th>{{email.email}}</th>
+			<th>{{email.created_at}}</th>
+		</tr>
+		{% endfor %}
+	</table>
+</body>
+</html>

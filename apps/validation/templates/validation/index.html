@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Email Validation</title>
+</head>
+<body>
+	<h1>Hello World!</h1>
+	
+	<form action="/process" method="post">
+	{% csrf_token %}
+		<label for="email_validation">Email</label>
+		<input type="text" name="email">
+		<button type="submit" name="submit">Enter Email</button>
+	</form>
+</body>
+</html>
